@@ -1,0 +1,81 @@
+@import url('root.css');
+/* Seccion del blog css */
+
+.blog-center{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.blog-center h5{
+    color: var(--clr-primary2);
+    font-size: 23px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.blog-center h2{
+    color: var(--clr-black);
+    font-size: 62px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.main-blog{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+}
+
+.blog-detls img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    transition: all .42s;
+}
+
+.blog-detls img:hover{
+    transform: translateY(-5px);
+}
+
+.pht{
+    display: flex;
+    gap: 15px;
+}
+
+.pht p{
+    color: var(--clr-black3);
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 8px 8px;
+}
+
+.pht2 p{
+    color: var(--clr-primary2);
+}
+
+.blog-phara{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.blog-phara h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 28px;
+    cursor: pointer;
+    transition: all .42s;
+}
+
+.blog-phara h4:hover{
+    color: var(--clr-primary2);
+}
+
+.blog-phara i{
+    font-size: 35px;
+    color: var(--clr-black);
+    transform: rotate(45deg);
+}
