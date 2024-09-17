@@ -205,12 +205,11 @@ section {
 
 #profile {
   display: flex;
+  flex-direction: row-reverse; /* Cambia la dirección de los elementos a reversa */
   justify-content: center;
   gap: 5rem;
   height: 80vh;
   justify-content: space-evenly;
-  
-  
 }
 
 .section__pic-container {
