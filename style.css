@@ -372,6 +372,156 @@ section {
   margin: auto 0;
 }
 
+/* SECCION DE ABOUT */
+
+.about__left .about__picture{
+  width: 50%;
+  border-radius: 100px;
+}
+
+.about__left .group__text {
+  padding-left: 0; /* Elimina o ajusta este padding */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  box-sizing: border-box; /* Asegura que el padding se incluya dentro del ancho */
+}
+
+.about__left .group__text h3 {
+  color: black;
+  width: 100%;
+  margin: 0; /* Evita que los márgenes desplacen el contenido */
+}
+
+.about__left .group__text p {
+  color: gray;
+  width: 100%;
+  margin: 0; /* Evita que los márgenes desplacen el contenido */
+}
+
+
+.about .container,
+.skills .container,
+.testimonials .container{
+    display: grid;
+    gap: 24px;
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.skills .container{
+  margin-top: 100px;
+}
+
+
+.container {
+  width: 1180px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+
+
+.group__text{
+  max-width: 100%;
+}
+
+.group__title{
+  margin-top: px;
+  font-size: calc(24px + 1vw);
+  line-height: 1.4;
+
+}
+.group__top{
+  text-transform: uppercase;
+}
+
+.group__top img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+
+.skills {
+  background-color: #ffffff;
+  margin-top: 100px;
+}
+
+.skills__right{
+  max-width: 100%;
+}
+
+.skills__text{
+  margin-bottom: 32px;
+}
+
+.skills__group{
+  max-width: 500px;
+}
+
+.skills__group li {
+  margin: 24px 0;
+}
+
+.skills__group li .bar{
+  background-color: var(--clr-primary);
+  display: block;
+  height: 3px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.skills__group li .bar span {
+  display: block;
+  height: 100%;
+
+  background-color: black;
+}
+
+.skills__group li .bar .design{
+  width: 90%;
+}
+
+.skills__group li .bar .art {
+  width: 80%;
+}
+
+.skills__group li .bar .branding{
+  width: 83%;
+}
+
+.skills__group li .bar .web{
+  width: 95%;
+}
+
+.tech {
+  margin: 10px
+}
+
+.user {
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user p {
+  font-size: 16px
+}
+
+#logos {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px
+}
+
+@media only screen and (min-width:550px) {
+  #logos {
+      width: 80%
+  }
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -391,6 +541,7 @@ section {
   flex-direction: column;
 }
 
+/* Contenedor general */
 .article-container {
   display: flex;
   text-align: initial;
@@ -400,16 +551,34 @@ section {
   justify-content: space-around;
 }
 
+/* Cada artículo */
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  flex-direction: column; /* Asegura que los elementos internos estén alineados verticalmente */
+  width: 20rem; /* Aumenta el ancho para dar más espacio al texto */
+  justify-content: flex-start; /* Asegura que el contenido no se distribuya extrañamente */
+  gap: 0.5rem; /* Espaciado entre los elementos internos */
 }
 
 article .icon {
   cursor: default;
 }
+
+/* Estilos para el texto dentro del artículo */
+article .group__text h3 {
+  padding-left: 0; /* Elimina el padding excesivo */
+  max-width: 100%; /* El ancho máximo ocupará todo el contenedor */
+  width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+  margin: 0; /* Elimina márgenes innecesarios */
+}
+
+article .group__text p {
+  padding-left: 0; /* Elimina el padding excesivo */
+  width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+  margin: 0; /* Elimina márgenes innecesarios */
+  word-wrap: break-word; /* Evita la superposición de texto largo */
+}
+
 
 /* PROJECTS SECTION */
 

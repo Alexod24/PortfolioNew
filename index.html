@@ -11,6 +11,8 @@
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
     
   </head>
   <body>
@@ -18,7 +20,9 @@
 <!-- navbar -->
 
     <nav id="desktop-nav">
-      <div class="logo">Alex Code</div>
+      <div class="logo" >
+        <a href="https://www.youtube.com/@Alex.od2408" target="_blank">Alex Code</a>
+      </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">Sobre mí</a></li>
@@ -67,14 +71,17 @@
         <div class="btn-container">
           <button
             class="btn btn-color-1"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('')"
           >
-            Hola mongol
+            Resumen
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Hola mundo
+            Contacto
           </button>
         </div>
+
+        <!-- ('./assets/resume-example.pdf') -->
+
         <div id="socials-container">
           
             <a href="https://github.com/Alexod24" target="_blank"><i class='bx bxl-github' ></i></a>
@@ -86,8 +93,9 @@
         </div>
       </div>
     </section>
+    <!-- 
     <section id="about">
-      <p class="section__text__p1">Conoce un poco</p>
+      <p class="section__text__p1">Conoce un poco</p> 
       <h1 class="title">Sobre Mí</h1>
       <div class="section-container">
         <div class="section__pic-container">
@@ -136,8 +144,141 @@
         class="icon arrow"
         onclick="location.href='./#experience'"
       />
-    </section>
-    <section id="experience">
+      
+    </section>-->
+
+    
+
+    <section class="skills" id="skills">
+        <div>
+
+          <p class="section__text__p1">Conoce un poco</p> 
+          <h1 class="title">Sobre Mí</h1>
+
+         
+        </div>
+      <div class="container">
+          <div class="about__left">
+              <!-- <p class="group__top">
+                  <img src="assets/img/line.svg" alt="">Mis skills
+              </p> -->
+
+              <h2 class="group__title">
+                  Ingeniero de chongos
+              </h2>
+              <br><br>
+              
+              <article >
+                <img
+                  src="./assets/about-pic.jpg"
+                  alt="Experience icon"
+                  class="about__picture"
+                />
+             
+              
+                <div class="group__text">
+                  <h3>Yonatan Ordoñez Diego</h3>
+                  <p>Frontend Developer</p>
+                </div>
+              </article>
+             
+        
+          </div>
+
+          <div class="skills__right">
+              <p class="skills__text">
+                Soy Alex, un apasionado programador web y estudiante de Ingeniería de Software. Me encanta crear soluciones innovadoras que combinan diseño y funcionalidad.
+              </p>
+
+              <ul class="skills__group">
+                  <li>
+                      <p>Diseño</p>
+                      <span class="bar"><span class="design"></span></span>
+                  </li>
+                  <li>
+                      <p>Art Direction</p>
+                      <span class="bar"><span class="art"></span></span>
+                  </li>
+                  <li>
+                      <p>Branding</p>
+                      <span class="bar"><span class="branding"></span></span>
+                  </li>
+                  <li>
+                      <p>Website Design</p>
+                      <span class="bar"><span class="web"></span></span>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <section class="logo">
+        <div class="user">
+          <!--  Languages -->
+          <div class="tech">
+            <h2>Lenguajes</h2>
+            
+           
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-java-plain colored"></i>
+            
+            <i class="devicon-csharp-plain colored"></i>
+            <i class="devicon-python-plain-wordmark colored"></i>
+            
+      
+            <!-- <p>Mis lenguajes favoritos para programación de sistemas, ingeniería de software y análisis de datos.</p> -->
+          </div>
+      
+          <!--  Front-End -->
+          <div class="tech">
+            <h2>Front-End</h2>
+           
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-laravel-original colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            
+            <!-- <p>Mis tecnologías preferidas para desarrollo front-end y diseño de componentes.</p> -->
+          </div>
+      
+          <!-- Back-End -->
+          <div class="tech">
+            <h2>Back-End</h2>
+            <i class="devicon-oracle-original colored"></i>
+            <i class="devicon-php-plain colored"></i>
+            
+            <i class="devicon-mysql-plain-wordmark colored"></i>
+            
+            <i class="devicon-microsoftsqlserver-plain colored"></i>
+            
+            
+            
+            
+            
+            <!-- <p>Mis tecnologías preferidas para programación back-end y arquitectura de bases de datos.</p> -->
+          </div>
+      
+          <!-- Tools -->
+          <div class="tech">
+            <h2>Tools</h2>
+                      
+            <i class="devicon-github-original colored"></i>
+            <i class="devicon-vscode-plain colored"></i>
+            <i class="devicon-git-plain colored"></i>
+            
+            <i class="devicon-gitlab-plain colored"></i>
+            
+            
+          
+            <!-- <p>Mis herramientas favoritas para control de versiones y edición de cóodigo.</p> -->
+          </div>
+        </div>
+      </section>
+      
+  </section>
+  
+ 
+  
+
+    <!-- <section id="experience">
       <p class="section__text__p1">Explora mis</p>
       <h1 class="title">Experiencias</h1>
       <div class="experience-details-container">
@@ -270,7 +411,8 @@
         class="icon arrow"
         onclick="location.href='./#projects'"
       />
-    </section>
+    </section> -->
+    
     <section id="projects">
       <p class="section__text__p1">Puedes ver mis</p>
       <h1 class="title">Proyectos</h1>
